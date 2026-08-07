@@ -22,7 +22,7 @@
       }
     },
     "wireframe": {
-      "model": "vercel/openai/gpt-5-nano",
+      "model": "vercel/openai/gpt-5-mini",
       "mode": "primary",
       "steps": 40,
       "permission": {
@@ -68,7 +68,7 @@
       }
     },
     "style": {
-      "model": "vercel/openai/gpt-5-nano",
+      "model": "vercel/openai/gpt-5-mini",
       "mode": "primary",
       "steps": 8,
       "permission": {
@@ -101,7 +101,7 @@
       "options": { "apiKey": "{env:AI_GATEWAY_API_KEY}" },
       "models": {
         "deepseek/deepseek-v4-flash-0731": {},
-        "openai/gpt-5-nano": {}
+        "openai/gpt-5-mini": {}
       }
     }
   },
