@@ -60,8 +60,8 @@ module.exports = {
           alternative: "var(--color-text-alternative)",
         },
         brand: {
-          black: "var(--color-accent)",
-          white: "var(--color-accent-contrast)",
+          black: "var(--color-background-alternative)",
+          white: "var(--color-text-alternative)",
         },
         scheme: {
           background: "var(--scheme-background)",

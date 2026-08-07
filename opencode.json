@@ -59,6 +59,7 @@
           "*": "deny",
           "proof.md": "allow",
           ".redesign/build-images.json": "allow",
+          ".redesign/valid-links.json": "allow",
           ".redesign/relume-install.json": "allow",
           ".redesign/relume-api.md": "allow",
           "package.json": "allow",

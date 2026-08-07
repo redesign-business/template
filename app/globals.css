@@ -12,13 +12,11 @@
   --color-border-primary: #000000;
   --color-border-secondary: #aaaaaa;
   --color-border-alternative: #ffffff;
-  --color-accent: #000000;
-  --color-accent-contrast: #ffffff;
   --scheme-background: var(--color-background-primary);
   --scheme-foreground: var(--color-background-primary);
   --scheme-text: var(--color-text-primary);
   --scheme-border: var(--color-border-primary);
-  --scheme-button-text: var(--color-accent-contrast);
+  --scheme-button-text: var(--color-text-alternative);
   --font-sans: Arial, sans-serif;
   --font-display: var(--font-sans);
   --space-section-sm: 4rem;
