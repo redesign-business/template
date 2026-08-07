@@ -21,47 +21,26 @@
         "external_directory": "deny"
       }
     },
-    "candidate": {
-      "model": "vercel/deepseek/deepseek-v4-flash-0731",
+    "build": {
+      "model": "vercel/openai/gpt-5.6-sol",
       "mode": "primary",
-      "steps": 20,
+      "steps": 12,
       "permission": {
         "read": {
           "*": "deny",
           "proof.md": "allow",
-          "scripts/make-contact-sheet.mjs": "allow"
+          ".redesign/build-images.json": "allow",
+          "package.json": "allow",
+          "app/page.tsx": "allow",
+          "app/globals.css": "allow",
+          "app/layout.tsx": "allow"
         },
         "edit": {
           "*": "deny",
-          ".redesign/relume-candidates.json": "allow"
+          "app/page.tsx": "allow",
+          "app/globals.css": "allow",
+          "app/layout.tsx": "allow"
         },
-        "glob": "deny",
-        "grep": "deny",
-        "list": "deny",
-        "bash": {
-          "*": "deny",
-          "node scripts/make-contact-sheet.mjs *": "allow"
-        },
-        "task": "deny",
-        "skill": "deny",
-        "webfetch": "deny",
-        "websearch": "deny",
-        "external_directory": "deny",
-        "relume-library_*": "allow"
-      }
-    },
-    "select": {
-      "model": "vercel/openai/gpt-5-nano",
-      "mode": "primary",
-      "steps": 4,
-      "permission": {
-        "read": {
-          "*": "deny",
-          "proof.md": "allow",
-          "public/images/manifest.json": "allow",
-          ".redesign/**": "allow"
-        },
-        "edit": { "*": "deny", ".redesign/selection.md": "allow" },
         "glob": "deny",
         "grep": "deny",
         "list": "deny",
@@ -74,47 +53,34 @@
         "relume-library_*": "deny"
       }
     },
-    "build": {
+    "repair": {
       "model": "vercel/deepseek/deepseek-v4-flash-0731",
       "mode": "primary",
-      "steps": 40,
+      "steps": 6,
       "permission": {
         "read": {
           "*": "deny",
-          "proof.md": "allow",
-          "public/images/manifest.json": "allow",
-          ".redesign/selection.md": "allow",
           "package.json": "allow",
-          "pnpm-lock.yaml": "allow",
-          "tsconfig.json": "allow",
-          "tailwind.config.*": "allow",
-          "app/**": "allow",
-          "components/**": "allow",
-          "ui/**": "allow",
-          "hooks/**": "allow",
-          "lib/**": "allow",
-          "/home/vercel-sandbox/.local/share/opencode/tool-output/**": "allow"
+          "app/page.tsx": "allow",
+          "app/globals.css": "allow",
+          "app/layout.tsx": "allow"
         },
         "edit": {
           "*": "deny",
-          "app/**": "allow",
-          "components/**": "allow",
-          "ui/**": "allow",
-          "hooks/**": "allow",
-          "lib/**": "allow",
-          "package.json": "allow",
-          "pnpm-lock.yaml": "allow"
+          "app/page.tsx": "allow",
+          "app/globals.css": "allow",
+          "app/layout.tsx": "allow"
         },
-        "glob": "allow",
-        "grep": "allow",
-        "list": "allow",
-        "bash": { "*": "deny", "pnpm add *": "allow" },
+        "glob": "deny",
+        "grep": "deny",
+        "list": "deny",
+        "bash": "deny",
         "task": "deny",
         "skill": "deny",
         "webfetch": "deny",
         "websearch": "deny",
-        "external_directory": "allow",
-        "relume-library_*": "allow"
+        "external_directory": "deny",
+        "relume-library_*": "deny"
       }
     }
   },
@@ -125,7 +91,7 @@
       "options": { "apiKey": "{env:AI_GATEWAY_API_KEY}" },
       "models": {
         "deepseek/deepseek-v4-flash-0731": {},
-        "openai/gpt-5-nano": {}
+        "openai/gpt-5.6-sol": {}
       }
     }
   },

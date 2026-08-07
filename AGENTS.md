@@ -1,5 +1,3 @@
-<!-- BEGIN:nextjs-agent-rules -->
-# This is NOT the Next.js you know
+# Redesign template
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
-<!-- END:nextjs-agent-rules -->
+Follow the assigned agent prompt. Keep the homepage in `app/page.tsx` and its styles in `app/globals.css`. Do not inspect unrelated files or add infrastructure.
