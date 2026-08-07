@@ -13,7 +13,7 @@ if (!Array.isArray(manifest.images) || manifest.images.length === 0) {
   throw new Error(`${manifestPath} must contain a non-empty images array`);
 }
 
-const pageSize = 20;
+const pageSize = 48;
 const outputPaths = [];
 for (let offset = 0; offset < manifest.images.length; offset += pageSize) {
   const page = Math.floor(offset / pageSize) + 1;
@@ -51,10 +51,10 @@ function contactSheetHtml(images) {
       <figcaption><strong>${escapeHtml(id)}</strong><span>${escapeHtml(label)}</span></figcaption>
     </figure>`).join("");
   return `<!doctype html><html><head><meta charset="utf-8"><style>
-    *{box-sizing:border-box}body{margin:0;padding:24px;background:#eee;font:16px/1.3 Arial,sans-serif;color:#111}
-    main{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}figure{margin:0;overflow:hidden;background:#fff;border:2px solid #111;border-radius:8px}
-    .image{height:260px;display:flex;align-items:center;justify-content:center;background:#ddd}img{width:100%;height:100%;object-fit:contain}
-    figcaption{display:flex;gap:10px;min-height:52px;padding:10px 12px;border-top:2px solid #111}strong{flex:none}span{overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+    *{box-sizing:border-box}body{margin:0;padding:16px;background:#eee;font:14px/1.25 Arial,sans-serif;color:#111}
+    main{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}figure{margin:0;overflow:hidden;background:#fff;border:2px solid #111;border-radius:6px}
+    .image{height:180px;display:flex;align-items:center;justify-content:center;background:#ddd}img{width:100%;height:100%;object-fit:contain}
+    figcaption{display:flex;gap:8px;min-height:44px;padding:7px 8px;border-top:2px solid #111}strong{flex:none}span{overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
   </style></head><body><main>${tiles}</main></body></html>`;
 }
 
