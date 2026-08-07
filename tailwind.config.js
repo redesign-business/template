@@ -16,6 +16,11 @@ module.exports = {
     },
     extend: {
       gradientColorStops: ({ theme }) => theme("colors"),
+      spacing: {
+        16: "var(--space-section-sm)",
+        24: "var(--space-section-md)",
+        28: "var(--space-section-lg)",
+      },
       fontSize: {
         h1: ["3.5rem", { lineHeight: "1.2", letterSpacing: "-0.01em" }],
         h2: ["3rem", { lineHeight: "1.2", letterSpacing: "-0.01em" }],
@@ -30,6 +35,35 @@ module.exports = {
         tiny: ["0.75rem", { lineHeight: "1.5" }],
       },
       colors: {
+        background: {
+          DEFAULT: "var(--color-background-primary)",
+          primary: "var(--color-background-primary)",
+          secondary: "var(--color-background-secondary)",
+          tertiary: "var(--color-background-tertiary)",
+          alternative: "var(--color-background-alternative)",
+        },
+        border: {
+          DEFAULT: "var(--color-border-primary)",
+          primary: "var(--color-border-primary)",
+          secondary: "var(--color-border-secondary)",
+          alternative: "var(--color-border-alternative)",
+        },
+        text: {
+          DEFAULT: "var(--color-text-primary)",
+          primary: "var(--color-text-primary)",
+          secondary: "var(--color-text-secondary)",
+          alternative: "var(--color-text-alternative)",
+        },
+        link: {
+          DEFAULT: "var(--color-text-primary)",
+          primary: "var(--color-text-primary)",
+          secondary: "var(--color-text-secondary)",
+          alternative: "var(--color-text-alternative)",
+        },
+        brand: {
+          black: "var(--color-accent)",
+          white: "var(--color-accent-contrast)",
+        },
         scheme: {
           background: "var(--scheme-background)",
           foreground: "var(--scheme-foreground)",
@@ -38,15 +72,25 @@ module.exports = {
           "btn-text": "var(--scheme-button-text)",
         },
       },
+      fontFamily: {
+        sans: "var(--font-sans)",
+        display: "var(--font-display)",
+      },
       borderRadius: {
-        button: "0rem",
-        card: "0rem",
-        image: "0rem",
-        form: "0rem",
-        badge: "0rem",
-        checkbox: "0rem",
-        carousel: "0rem",
-        dropdown: "0rem",
+        button: "var(--radius-button)",
+        card: "var(--radius-card)",
+        image: "var(--radius-image)",
+        form: "var(--radius-form)",
+        badge: "var(--radius-badge)",
+        checkbox: "var(--radius-control)",
+        carousel: "var(--radius-card)",
+        dropdown: "var(--radius-control)",
+      },
+      boxShadow: {
+        card: "var(--shadow-card)",
+        small: "var(--shadow-card)",
+        medium: "var(--shadow-card)",
+        large: "var(--shadow-card)",
       },
     },
   },
