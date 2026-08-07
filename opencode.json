@@ -21,46 +21,69 @@
         "external_directory": "deny"
       }
     },
-    "build": {
+    "compose": {
       "model": "vercel/openai/gpt-5.6-sol",
       "mode": "primary",
-      "steps": 40,
+      "steps": 20,
       "permission": {
         "read": {
           "*": "deny",
           "proof.md": "allow",
           ".redesign/build-images.json": "allow",
-          "package.json": "allow",
-          "pnpm-lock.yaml": "allow",
-          "tsconfig.json": "allow",
-          "tailwind.config.*": "allow",
-          "app/**": "allow",
-          "components/**": "allow",
-          "ui/**": "allow",
-          "hooks/**": "allow",
-          "lib/**": "allow",
-          "/home/vercel-sandbox/.local/share/opencode/tool-output/**": "allow"
+          "app/page.tsx": "allow"
         },
         "edit": {
           "*": "deny",
-          "app/**": "allow",
-          "components/**": "allow",
-          "ui/**": "allow",
-          "hooks/**": "allow",
-          "lib/**": "allow",
-          "package.json": "allow",
-          "pnpm-lock.yaml": "allow"
+          ".redesign/relume-selection.json": "allow"
         },
-        "glob": "allow",
-        "grep": "allow",
-        "list": "allow",
-        "bash": { "*": "deny", "pnpm add *": "allow" },
+        "glob": "deny",
+        "grep": "deny",
+        "list": "deny",
+        "bash": "deny",
         "task": "deny",
         "skill": "deny",
         "webfetch": "deny",
         "websearch": "deny",
-        "external_directory": "allow",
-        "relume-library_*": "allow"
+        "external_directory": "deny",
+        "relume-library_*": "deny",
+        "relume-library_search_components": "allow",
+        "relume-library_list_categories": "allow"
+      }
+    },
+    "build": {
+      "model": "vercel/openai/gpt-5.6-sol",
+      "mode": "primary",
+      "steps": 20,
+      "permission": {
+        "read": {
+          "*": "deny",
+          "proof.md": "allow",
+          ".redesign/build-images.json": "allow",
+          ".redesign/relume-install.json": "allow",
+          "package.json": "allow",
+          "tsconfig.json": "allow",
+          "tailwind.config.*": "allow",
+          "app/**": "allow",
+          "components/**": "allow",
+          "hooks/**": "allow",
+          "lib/**": "allow"
+        },
+        "edit": {
+          "*": "deny",
+          "app/page.tsx": "allow",
+          "app/globals.css": "allow",
+          "app/layout.tsx": "allow"
+        },
+        "glob": "allow",
+        "grep": "allow",
+        "list": "allow",
+        "bash": "deny",
+        "task": "deny",
+        "skill": "deny",
+        "webfetch": "deny",
+        "websearch": "deny",
+        "external_directory": "deny",
+        "relume-library_*": "deny"
       }
     },
     "repair": {

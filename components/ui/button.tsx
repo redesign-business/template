@@ -8,7 +8,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "border border-scheme-border bg-neutral-darkest text-white",
+        default: "border border-background-tertiary bg-background-tertiary text-scheme-btn-text",
         alternate: "border border-white bg-white text-neutral-darkest",
         secondary: "border border-scheme-border text-scheme-text",
         "secondary-alt": "border border-white text-white",
