@@ -4,12 +4,11 @@ const relumeTailwind = require("@relume_io/relume-tailwind");
 module.exports = {
   presets: [relumeTailwind],
   theme: {
-    // Relume uses 100% here, which Tailwind v4 emits as an invalid media query.
     container: {
       center: true,
       screens: {
-        sm: "0px",
-        md: "0px",
+        sm: "480px",
+        md: "768px",
         lg: "992px",
         xl: "1280px",
       },

@@ -23,7 +23,9 @@
 # misc
 .DS_Store
 *.pem
-/.redesign/
+/.redesign/*
+!/.redesign/sessions/
+!/.redesign/sessions/*.log
 
 # debug
 npm-debug.log*
