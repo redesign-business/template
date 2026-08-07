@@ -1,1 +1,24 @@
 @import "tailwindcss";
+@config "../tailwind.config.js";
+
+:root {
+  --scheme-background: #ffffff;
+  --scheme-foreground: #ffffff;
+  --scheme-text: #000000;
+  --scheme-border: #000000;
+  --scheme-button-text: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--scheme-background);
+  color: var(--scheme-text);
+}
+
+img {
+  display: block;
+}
