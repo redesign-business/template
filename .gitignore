@@ -26,6 +26,12 @@
 /.redesign/*
 !/.redesign/sessions/
 !/.redesign/sessions/*.log
+!/.redesign/relume-selection.json
+!/.redesign/relume-components.json
+!/.redesign/relume-install.json
+!/.redesign/relume-api.md
+!/.redesign/relume-original/
+!/.redesign/relume-original/**
 
 # debug
 npm-debug.log*

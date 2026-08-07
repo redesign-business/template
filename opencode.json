@@ -60,13 +60,14 @@
           "proof.md": "allow",
           ".redesign/build-images.json": "allow",
           ".redesign/relume-install.json": "allow",
+          ".redesign/relume-api.md": "allow",
           "package.json": "allow",
           "tsconfig.json": "allow",
           "tailwind.config.*": "allow",
           "app/**": "allow",
-          "components/**": "allow",
-          "hooks/**": "allow",
-          "lib/**": "allow"
+          "components/ui/button.tsx": "allow",
+          "components/ui/card.tsx": "allow",
+          "components/ui/badge.tsx": "allow"
         },
         "edit": {
           "*": "deny",
