@@ -21,7 +21,7 @@
         "external_directory": "deny"
       }
     },
-    "plan": {
+    "planner": {
       "model": "vercel/deepseek/deepseek-v4-flash-0731",
       "mode": "primary",
       "steps": 20,
