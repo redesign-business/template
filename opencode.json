@@ -6,7 +6,7 @@
     "research": {
       "model": "vercel/deepseek/deepseek-v4-flash-0731",
       "mode": "primary",
-      "steps": 8,
+      "steps": 20,
       "permission": {
         "read": { "*": "deny", "raw.md": "allow", "public/images/manifest.json": "allow", "proof.md": "allow" },
         "edit": { "*": "deny", "proof.md": "allow" },
@@ -91,7 +91,7 @@
     "repair": {
       "model": "vercel/deepseek/deepseek-v4-flash-0731",
       "mode": "primary",
-      "steps": 12,
+      "steps": 20,
       "permission": {
         "read": {
           "*": "deny",
