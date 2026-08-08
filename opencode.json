@@ -91,14 +91,18 @@
     "repair": {
       "model": "vercel/deepseek/deepseek-v4-flash-0731",
       "mode": "primary",
-      "steps": 6,
+      "steps": 12,
       "permission": {
         "read": {
           "*": "deny",
           "package.json": "allow",
+          ".redesign/relume-api.md": "allow",
           "app/page.tsx": "allow",
           "app/globals.css": "allow",
-          "app/layout.tsx": "allow"
+          "app/layout.tsx": "allow",
+          "components/ui/button.tsx": "allow",
+          "components/ui/card.tsx": "allow",
+          "components/ui/badge.tsx": "allow"
         },
         "edit": {
           "*": "deny",
@@ -107,7 +111,7 @@
           "app/layout.tsx": "allow"
         },
         "glob": "deny",
-        "grep": "deny",
+        "grep": "allow",
         "list": "deny",
         "bash": "deny",
         "task": "deny",
