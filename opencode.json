@@ -29,11 +29,11 @@
         "read": {
           "*": "deny",
           ".redesign/planning-input.md": "allow",
-          ".redesign/page-plan.json": "allow"
+          ".redesign/sections.json": "allow"
         },
         "edit": {
           "*": "deny",
-          ".redesign/page-plan.json": "allow"
+          ".redesign/sections.json": "allow"
         },
         "glob": "deny",
         "grep": "deny",
@@ -47,19 +47,19 @@
         "relume-library_*": "deny"
       }
     },
-    "select": {
+    "image": {
       "model": "vercel/openai/gpt-5-nano",
       "mode": "primary",
       "steps": 20,
       "permission": {
         "read": {
           "*": "deny",
-          ".redesign/selection-input.md": "allow",
-          ".redesign/section-selection.json": "allow"
+          ".redesign/image-inputs/**": "allow",
+          ".redesign/image-selections/**": "allow"
         },
         "edit": {
           "*": "deny",
-          ".redesign/section-selection.json": "allow"
+          ".redesign/image-selections/**": "allow"
         },
         "glob": "deny",
         "grep": "deny",
@@ -70,9 +70,7 @@
         "webfetch": "deny",
         "websearch": "deny",
         "external_directory": "deny",
-        "relume-library_*": "deny",
-        "relume-library_search_components": "allow",
-        "relume-library_list_categories": "allow"
+        "relume-library_*": "deny"
       }
     },
     "page": {
