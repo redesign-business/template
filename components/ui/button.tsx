@@ -26,19 +26,20 @@ const buttonVariants = cva(
 export type ButtonProps = React.ComponentProps<"button"> &
   VariantProps<typeof buttonVariants> & {
     asChild?: boolean;
+    title?: string;
     href?: string;
     url?: string;
     iconLeft?: React.ReactNode;
     iconRight?: React.ReactNode;
   };
 
-export function Button({ className, variant, size, asChild = false, href, url, type, onClick, iconLeft, iconRight, children, ...props }: ButtonProps) {
+export function Button({ className, variant, size, asChild = false, title, href, url, type, onClick, iconLeft, iconRight, children, ...props }: ButtonProps) {
   const destination = href ?? url;
   if (!asChild && !destination && !onClick && type !== "submit") return null;
   const Comp: React.ElementType = asChild ? Slot : destination ? "a" : "button";
   return (
-    <Comp className={cn(buttonVariants({ variant, size, className }))} href={destination} type={destination ? undefined : type} onClick={onClick} {...props}>
-      {iconLeft}<Slottable>{children}</Slottable>{iconRight}
+    <Comp className={cn(buttonVariants({ variant, size, className }))} href={destination} title={title} type={destination ? undefined : type} onClick={onClick} {...props}>
+      {iconLeft}<Slottable>{children ?? title}</Slottable>{iconRight}
     </Comp>
   );
 }
