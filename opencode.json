@@ -8,7 +8,7 @@
       "mode": "primary",
       "steps": 8,
       "permission": {
-        "read": { "*": "deny", "raw.md": "allow", "public/images/manifest.json": "allow" },
+        "read": { "*": "deny", "raw.md": "allow", "public/images/manifest.json": "allow", "proof.md": "allow" },
         "edit": { "*": "deny", "proof.md": "allow" },
         "glob": "deny",
         "grep": "deny",
