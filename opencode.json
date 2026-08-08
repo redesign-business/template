@@ -54,12 +54,12 @@
       "permission": {
         "read": {
           "*": "deny",
-          ".redesign/image-inputs/**": "allow",
-          ".redesign/image-selections/**": "allow"
+          ".redesign/image-input.md": "allow",
+          ".redesign/image-selection.json": "allow"
         },
         "edit": {
           "*": "deny",
-          ".redesign/image-selections/**": "allow"
+          ".redesign/image-selection.json": "allow"
         },
         "glob": "deny",
         "grep": "deny",
