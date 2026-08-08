@@ -27,6 +27,9 @@
 !/.redesign/sessions/
 !/.redesign/sessions/*.log
 !/.redesign/relume-selection.json
+!/.redesign/page-plan.json
+!/.redesign/section-selection.json
+!/.redesign/theme.json
 !/.redesign/relume-components.json
 !/.redesign/relume-install.json
 !/.redesign/relume-api.md
